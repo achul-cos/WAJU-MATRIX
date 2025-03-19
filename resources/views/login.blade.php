@@ -155,7 +155,7 @@
             <div class="col-md-3 d-flex">
                 <!-- Logo -->
                 <a href="../halaman_utama/halaman_utama.html"> 
-                    <img src="../img/icon/logo.svg" alt="logo" class="logo">
+                    <img src="../resources/img/icon/logo.svg" alt="logo" class="logo">
                 </a>
             </div>
 

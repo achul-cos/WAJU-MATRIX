@@ -1,7 +1,14 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/login/{id}/{nama}', [LoginController::class, 'tampilkan']);
+
+Route::get('/login', function () {
+    return view('login');
 });
