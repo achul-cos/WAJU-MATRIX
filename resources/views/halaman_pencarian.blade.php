@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pencarian Baju</title>
-    
+    <title>WAJU - Pencarian</title>
+
     <!-- Bootstrap CSS -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -27,7 +25,7 @@
             font-family: "Poppins", sans-serif;
         }
 
-        /* CSS : Navagation Bar */
+        /* CSS : Navigation Bar */
         .navbar {
             background-image: url(../img/icon/navbar.png);
             background-size: cover;
@@ -46,7 +44,7 @@
         }
 
         .navbar-brand:hover {
-            filter:invert(100%) !important;
+            filter: invert(100%) !important;
             opacity: 0.7;
         }
 
@@ -57,25 +55,25 @@
             margin: 0 0 0 0;
             border: 1px solid rgba(14, 89, 129, 0.178);
             border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: rgb(166, 214, 239) url(../img/icon/icon_cari.svg) no-repeat center / 25% !important;
             transition: 0.1s;
         }
-    
-        .tombol_pencarian:hover{
+
+        .tombol_pencarian:hover {
             border: none !important;
-            filter:invert(20%) !important;
+            filter: invert(20%) !important;
         }
 
-        .tombol_pencarian:active{
+        .tombol_pencarian:active {
             background-size: 50% !important;
         }
 
         .bar_pencarian {
-            color: rgba(91, 91, 91, 0.57);            
+            color: rgba(91, 91, 91, 0.57);
             border: 1px solid rgba(14, 89, 129, 0.178);
             border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             text-indent: 12px;
             letter-spacing: 1px;
             transition: 0.3s;
@@ -96,7 +94,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .keranjang:hover {
             transform: scale(1.2);
         }
@@ -104,9 +102,9 @@
         .keranjang:active {
             animation: beat 0.3s alternate;
             transform-origin: center;
-        } 
-        
-        @keyframes beat{
+        }
+
+        @keyframes beat {
             to { transform: scale(1.4); }
         }
 
@@ -131,7 +129,7 @@
             overflow: hidden;
             white-space: nowrap !important;
             text-overflow: ellipsis !important;
-            max-width: calc(8vw) !important; 
+            max-width: calc(8vw) !important;
             width: auto;
             text-align: center;
         }
@@ -140,7 +138,7 @@
             background-color: #f2f2f2;
             color: rgb(39, 74, 94);
         }
-        
+
         .base_profil, .profil {
             margin: auto;
             width: auto;
@@ -150,9 +148,9 @@
             transition: 0.3s;
             padding-right: 30;
             transition: 0.3s;
-            right: 0;   
+            right: 0;
         }
-        
+
         .profil:hover {
             transform: scale(1.2);
         }
@@ -160,10 +158,6 @@
         .profil:active {
             animation: beat 0.3s alternate;
             transform-origin: center;
-        } 
-
-        .base_profil:hover, .profil:hover {
-            transform: scale(1.3);
         }
 
         .container-fluid {
@@ -234,12 +228,12 @@
         }
 
         /* CSS : Isi Website */
-        .isi{
+        .isi {
             max-width: 100%;
             padding-top: 0px;
             margin: 0;
             overflow-x: hidden;
-            padding-bottom:100px;
+            padding-bottom: 100px;
         }
 
         .info-produk-baju .card-title,
@@ -257,21 +251,6 @@
             object-fit: cover;
         }
 
-        /* Tentang */
-        .about {
-            padding: 50px 0;
-            background-color: #fff;
-            text-align: center;
-        }
-        .about h2 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-        .about p {
-            margin: 10px 0;
-            font-size: 1.1rem;
-        }
-        
         /* Footer */
         .footer {
             background: #333;
@@ -299,6 +278,10 @@
         .footer .social-links a:hover {
             color: #ff6347
         }
+
+        .base_profil:hover, .profil:hover {
+            transform: scale(1.3);
+        }
     </style>
 </head>
 
@@ -323,33 +306,23 @@
             <div class="col-3 row d-flex justify-content-center kolom_konten">
                 <div class="col-auto d-flex kolom_keranjang">
                     <!-- Logo Keranjang -->
-                    <td>
-                        <form action="../halaman_keranjang/halaman_keranjang.html" method="post" name="tombol_keranjang">
-                            <button style="border: none; background: transparent;" class="base_keranjang" type="submit">
-                                <img src="..\img\icon\icon_keranjang.svg" alt="keranjang" class="keranjang">
-                            </button>
-                        </form>
-                    </td>
+                    <button style="border: none; background: transparent;" class="base_keranjang">
+                        <img src="..\img\icon\icon_keranjang.svg" alt="keranjang" class="keranjang">
+                    </button>
                 </div>
 
                 <div class="col-md-6 kolom_nama d-flex">
                     <!-- Nama Pengguna -->
-                    <td>
-                        <a href="../halaman_list/list_sewa.html" class="base_username" id="username">
-                            <div class="tulisan">
-                                Username
-                            </div>
-                        </a>
-                    </td>
+                    <a href="../halaman_list/list_sewa.html" class="base_username" id="username">
+                        <div class="tulisan">Username</div>
+                    </a>
                 </div>
 
                 <div class="col-auto d-flex kolom_profil">
                     <!-- Foto profil -->
-                    <td>
-                        <a href="../halaman_list/list_sewa.html" class="base_profil">
-                            <img src="..\img\icon\profile.jpg" style="transform: scale(1.3); aspect-ratio: 1/1; object-fit: cover;" alt="photo_profil" class="profil rounded-circle border border-success border-opacity-25 shadow">
-                        </a>
-                    </td>
+                    <a href="../halaman_list/list_sewa.html" class="base_profil">
+                        <img src="..\img\icon\profile.jpg" style="transform: scale(1.3); aspect-ratio: 1/1; object-fit: cover;" alt="photo_profil" class="profil rounded-circle border border-success border-opacity-25 shadow">
+                    </a>
                 </div>
             </div>
         </div>
@@ -398,73 +371,47 @@
                         </li>
                     </ul>
                 </div>
-        
+
                 <!-- Hasil Pencarian -->
                 <div class="col-md-10">
-                    <p class="text-center fw-light my-4"> Menampilkan hasil pencarian <strong>"Cosplay"</strong>.<p>
+                    <p class="text-center fw-light my-4"> Menampilkan hasil pencarian <strong>"Pencarian"</strong>.<p>
                     <div class="row">
-                        <!-- Example Product Card (Static) -->
+                        <!-- Example product card - for demonstration -->
                         <div class="col-md-3 mb-3">
                             <div class="info-produk-baju card">
-                                <img src="../img/products/cosplay1.jpg" class="card-img-top img-fluid foto_baju" alt="Product1">
+                                <img src="../img/product-placeholder.jpg" class="card-img-top img-fluid foto_baju" alt="Product">
                                 <div class="card-body bg-light">
-                                    <h5 class="card-title">Cosplay Naruto</h5>
-                                    <p class="card-text">Anime Cosplay</p>
+                                    <h5 class="card-title">Nama Produk</h5>
+                                    <p class="card-text">Kategori Produk</p>
                                     <table>
                                         <tr style="padding-bottom: 10px">
-                                            <td style="padding-right:10px;">Tersewa <span style="font-weight: 750;">24</span> Kali</td>
+                                            <td style="padding-right:10px;">Tersewa <span style="font-weight: 750;">10</span> Kali</td>
                                             <td>|</td>
                                             <td style="padding-left:10px;">Rating <span style="font-weight: 750;">4.5</span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></td>
                                         </tr>
                                     </table>
                                     <br>
-                                    <form method="get" action="../halaman_katalog/halaman_katalog.html">
-                                        <input type="hidden" name="tombol_baju" value="Cosplay Naruto">
-                                        <button type="submit" class="btn btn-primary">Rp 150.000/hari</button>
-                                    </form>
+                                    <button type="button" class="btn btn-primary">Rp 50.000/hari</button>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Example Product Card (Static) -->
-                        <div class="col-md-3 mb-3">
-                            <div class="info-produk-baju card">
-                                <img src="../img/products/cosplay2.jpg" class="card-img-top img-fluid foto_baju" alt="Product2">
-                                <div class="card-body bg-light">
-                                    <h5 class="card-title">Cosplay One Piece</h5>
-                                    <p class="card-text">Anime Cosplay</p>
-                                    <table>
-                                        <tr style="padding-bottom: 10px">
-                                            <td style="padding-right:10px;">Tersewa <span style="font-weight: 750;">32</span> Kali</td>
-                                            <td>|</td>
-                                            <td style="padding-left:10px;">Rating <span style="font-weight: 750;">4.7</span> <i class="fa-solid fa-star" style="color: #FFD43B;"></i></td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <form method="get" action="../halaman_katalog/halaman_katalog.html">
-                                        <input type="hidden" name="tombol_baju" value="Cosplay One Piece">
-                                        <button type="submit" class="btn btn-primary">Rp 175.000/hari</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
+                        <!-- More product cards can be added here -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-                
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Waju - Penyewaan Baju Online</p>
+            <p>&copy; 2025 WAJU - Sewa Kostum Online</p>
             <ul class="social-links">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
-            <p>Jl. Contoh No. 123, Kota Contoh, Indonesia</p>
-            <p>Email: info@waju.com | Telepon: (021) 123-4567</p>
         </div>
     </footer>
 
