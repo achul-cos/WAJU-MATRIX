@@ -12,3 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/admin', function () {
+    return view('halaman_masuk_admin');
+});
