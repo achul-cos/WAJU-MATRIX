@@ -26,6 +26,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Penyertaan skrip Bootstrap -->
   <script src="./Product Page_files/popper.min.js.download"></script>
   <script src="./Product Page_files/bootstrap.min.js.download"></script>

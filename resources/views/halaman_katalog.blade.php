@@ -6,7 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $_GET['tombol_baju'];?></title>
+    <title>Product</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Menggunakan Bootstrap CSS dari file lokal -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -492,7 +495,7 @@
     <div class="col-7 kolom_pencarian">
         <!-- Bar Pencarian -->
         <form class="d-flex" style="padding-left: 20px;" action="../halaman_pencarian/halaman_pencarian.php" method="get">
-            <input class="bar_pencarian form-control me-2" name="pencarian" value="<?php if(isset($_GET['pencarian'])){echo $_GET['pencarian'];} ?>" type="search" placeholder="Hari ini mau keren yang mana?" aria-label="Search" required maxlength="60" oninvalid="this.setCustomValidity('Isi dong, mau nyari apa kalau kosong.')" oninput="setCustomValidity('')">
+            <input class="bar_pencarian form-control me-2" name="pencarian" value="" type="search" placeholder="Hari ini mau keren yang mana?" aria-label="Search" required maxlength="60" oninvalid="this.setCustomValidity('Isi dong, mau nyari apa kalau kosong.')" oninput="setCustomValidity('')">
             <button class="tombol_pencarian btn btn-outline-success" type="submit"></button>
         </form>
     </div>
@@ -518,7 +521,7 @@
             <td>
                 <a href="../halaman_list/list_sewa.php" class="base_username" id="username">
                     <div class="tulisan">
-                        <?php echo $_SESSION['nama_pengguna']; ?>
+                        
                     </div>
                 </a>
             </td>
@@ -530,7 +533,7 @@
 
             <td>
             <a href="../halaman_list/list_sewa.php" class="base_profil">
-                <img src="<?php if($_SESSION['foto_pengguna'] == NULL) {echo "..\img\icon\profile.jpg";} else{echo $_SESSION['foto_pengguna'];}?>" style="transform: scale(1.3); aspect-ratio: 1/1; object-fit: cover;" alt="photo_profil" class="profil rounded-circle border border-success border-opacity-25 shadow">
+                <img src="" style="transform: scale(1.3); aspect-ratio: 1/1; object-fit: cover;" alt="photo_profil" class="profil rounded-circle border border-success border-opacity-25 shadow">
                 </a>
 
             <style>
@@ -584,7 +587,7 @@
 
                     <div class="product-info" style="padding:25px 25px 30px 25px;">
 
-                    <h3 class="p-1 font-weight-bold"><?= $produk['nama_baju']; ?></h3>
+                    <h3 class="p-1 font-weight-bold"></h3>
 
                         <div class="product-info" style="padding: 25px;">
 
@@ -617,28 +620,28 @@
 
                                         <td class="px-1" style="display: none;">
                                             <form method="get" action="../halaman_katalog/halaman_katalog_s.php">
-                                                <input type="hidden" name="tombol_baju" value="<?= $produk['nama_baju']; ?>"> 
+                                                <input type="hidden" name="tombol_baju" value=""> 
                                                 <button type="submit" class="btn btn-outline-primary">S</button>
                                             </form>
                                         </td>
 
                                         <td class="px-1">
                                             <form method="get" action="../halaman_katalog/halaman_katalog_s.php">
-                                                <input type="hidden" name="tombol_baju" value="<?= $produk['nama_baju']; ?>"> 
+                                                <input type="hidden" name="tombol_baju" value=""> 
                                                 <button type="submit" class="btn btn-outline-primary">S</button>
                                             </form>
                                         </td>
                                         
                                         <td class="px-1">
                                             <form method="get" action="../halaman_katalog/halaman_katalog_m.php">
-                                                <input type="hidden" name="tombol_baju" value="<?= $produk['nama_baju']; ?>"> 
+                                                <input type="hidden" name="tombol_baju" value=""> 
                                                 <button type="submit" class="btn btn-outline-primary">M</button>
                                             </form>
                                         </td>   
                                         
                                         <td class="px-1">
                                             <form method="get" action="../halaman_katalog/halaman_katalog_l.php">
-                                                <input type="hidden" name="tombol_baju" value="<?= $produk['nama_baju']; ?>"> 
+                                                <input type="hidden" name="tombol_baju" value=""> 
                                                 <button type="submit" class="btn btn-outline-primary">L</button>
                                             </form>
                                         </td>
@@ -657,7 +660,7 @@
 
                                 <div class="d-flex justify-content-between">
                                     <button class="btn btn-outline-primary" id="addToCartButton" type="submit" disabled>TAMBAHKAN KE KERANJANG</button>
-                                    <a href="https://api.whatsapp.com/send?phone=<?php echo $produk['kontak_pemilik']; ?>&text=Halo WAJU Lovers! Saya Ingin Bertanya." target="_blank" class="button btn btn-custom">Chat Pemilik</a>
+                                    <a href="https://api.whatsapp.com/send?phone=&text=Halo WAJU Lovers! Saya Ingin Bertanya." target="_blank" class="button btn btn-custom">Chat Pemilik</a>
                                 </div>
 
                             </form>
@@ -698,13 +701,13 @@
 
                             <div class="col px-2">
 
-                                <a type="button" class="btn btn-primary p-1 px-2" href="#"><p class="card-title font-weight-bold"><?= $produk['pemilik_baju']; ?></p></a>
+                                <a type="button" class="btn btn-primary p-1 px-2" href="#"><p class="card-title font-weight-bold"></p></a>
 
                                 <div class="d-flex flex-row bd-highlight mt-3">
 
                                     <div class="vr" style="width: 3px; rounded"></div>
 
-                                    <p class="card-text px-2 text-truncate" style="max-width: 80vh;"><?= $produk['deskripsi_toko']; ?></p>
+                                    <p class="card-text px-2 text-truncate" style="max-width: 80vh;"></p>
 
                                 </div>
 
@@ -712,7 +715,7 @@
 
                                     <i class="fa-solid fa-location-dot"></i>
 
-                                    <p class="card-text px-2 text-truncate" style="max-width: 80vh;"><?= $produk['alamat_toko']; ?></p>
+                                    <p class="card-text px-2 text-truncate" style="max-width: 80vh;"></p>
 
                                 </div>
 
@@ -770,8 +773,6 @@
                         <div class="deskripsi">
 
                             <p class="text-break">
-                            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus et ipsum eu ultrices. Vivamus at mauris eros. Mauris vitae suscipit augue. Aenean ac mollis ante. Nullam vitae eros gravida diam interdum finibus eu ac orci. Proin luctus tellus nunc, vitae scelerisque dolor venenatis eu. Phasellus convallis a ipsum sit amet luctus. Integer eu placerat urna. Mauris ut euismod arcu. Aliquam laoreet nulla sem, at auctor ligula dapibus et. Suspendisse ultrices leo at porttitor auctor. Nam quis dolor ac tellus viverra mollis nec quis dolor.-->
-                            <?php echo nl2br(htmlspecialchars($produk['deskripsi_baju'])); ?>
                             </p>
 
                         </div>

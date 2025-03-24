@@ -14,6 +14,9 @@
     <link href="..\bootstrap\css\bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">    
+
     <!-- Logo Tab -->
     <link rel="icon" type="image/x-icon" href="../img/icon/logo_atas.svg">
 

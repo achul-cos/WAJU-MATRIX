@@ -12,6 +12,9 @@
         
         <link rel="stylesheet" href="..\footer\footer.css">
 
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
         <!-- Menggunakan Bootstrap CSS dari file lokal -->
         <link href="..\bootstrap\css\bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
